@@ -7,6 +7,8 @@ url: lucashueda.github.io
 
 about_title: About
 projects_title: Home
+prototypes_title: Prototypes
+publications_title: Publications
 
 # User settings
 user_description_appendix: |
@@ -49,6 +51,8 @@ permalink: ':title/'
 baseurl: ''
 projects_url: '/'
 about_url: '/about'
+publications_url: '/publications'
+prototypes_url: '/prototypes'
 
 
 plugins:
