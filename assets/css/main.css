@@ -405,7 +405,7 @@ pre code{
     font-family:'Montserrat',sans-serif;
     padding:15px 0;
     background-color:#fff;
-    box-shadow:0 -5px 15px rgba(0,0,0,.3)
+    box-shadow:0 -5px 15px rgba(0,0,0,.3);
     width: 100%; 
     position: fixed;
     top: 0;
