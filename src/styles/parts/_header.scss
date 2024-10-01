@@ -8,7 +8,8 @@
     top: 0;
     left: 0;
     z-index: 1000; /* Keeps the header above other content */
-  
+    width: 100%; 
+    
     .header-flex {
       display: flex;
       justify-content: space-between;
@@ -110,3 +111,8 @@
       opacity: .8;
     }
   }
+
+  /* Ensure that content doesn't overlap with the header */
+body {
+    padding-top: 130px; /* Adjust based on the height of your header */
+}
