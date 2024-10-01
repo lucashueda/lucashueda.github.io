@@ -10,16 +10,12 @@ projects_title: Home
 
 # User settings
 user_description_appendix: |
-  I created this site to write about my interests: startups and entrepreneurship, design, data-intensive applications,
-  functional programming, AR/VR, and machine learning. I like to use computers to solve problems.
+  I created this website to store my thoughts and share my personal projects, mostly, on AI. My research topics are:
+  artificial intelligence, gen ai, speech synthesis, voice conversion, representation learning and affective computing.
 
-  I built this site in [Jekyll][jekyll], and it's hosted for free on [GitHub Pages][gh-pages]. It's open source, so if
-  you like it, feel free to fork it on [GitHub][github] and make your own version.
-
-  [github]: https://github.com/lucashueda/lucashueda.github.io
-  [gh-pages]: https://pages.github.com/
-  [jekyll]: https://jekyllrb.com
-
+  This website was built on top of [Rassaby][rassaby] template all credits to him.
+  
+  [rassaby]: https://github.com/lrassaby/lrassaby.github.io
 
 email: lucashueda@gmail.com
 linkedin: lucashueda
@@ -44,7 +40,7 @@ disqus_identifier: lucashueda
 ## Tracker
 google_analytics_id: UA-109461282-1
 
-keywords: 'software,engineer,design,scala,cello,music,louis rassaby,rassaby'
+keywords: 'python, ai, deep learning, data science, speech synthesis, tts, voice conversion, vc'
 
 ## URLs
 permalink: ':title/'
