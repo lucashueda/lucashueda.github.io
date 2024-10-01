@@ -1,6 +1,6 @@
 .icon-image {
-    width: 24px; /* Adjust size to match Font Awesome */
-    height: 24px;
+    width: 22px; /* Adjust size to match Font Awesome */
+    height: 22px;
     display: inline-block; /* Make sure it behaves like an inline icon */
     vertical-align: -3px; /* Align it with text */
     fill: currentColor; /* For SVG, this makes the color inherit from text color */
@@ -10,6 +10,7 @@
 /* Originally FA hover becomes blue, but we couldn't replicate it yet */
 .icon-image:hover {
     opacity: 0.8; 
+}
 
 .highlight{
     background-color:#faf9f9;
