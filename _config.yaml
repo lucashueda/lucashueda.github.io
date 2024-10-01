@@ -6,8 +6,8 @@ description: |
 url: lucashueda.github.io
 
 about_title: About
-projects_title: Home
-prototypes_title: Prototypes
+posts_title: Home
+projects_title: Projects
 publications_title: Publications
 
 # User settings
@@ -49,10 +49,10 @@ keywords: 'python, ai, deep learning, data science, speech synthesis, tts, voice
 permalink: ':title/'
 
 baseurl: ''
-projects_url: '/'
+posts_url: '/'
 about_url: '/about'
 publications_url: '/publications'
-prototypes_url: '/prototypes'
+projects_url: '/projects'
 
 
 plugins:
