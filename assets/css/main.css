@@ -1,3 +1,16 @@
+.icon-image {
+    width: 24px; /* Adjust size to match Font Awesome */
+    height: 24px;
+    display: inline-block; /* Make sure it behaves like an inline icon */
+    vertical-align: middle; /* Align it with text */
+    fill: currentColor; /* For SVG, this makes the color inherit from text color */
+}
+
+/* Optionally, for hover effects like Font Awesome */
+.icon-image:hover {
+    opacity: 0.8; /* Slight opacity change on hover, similar to Font Awesome */
+}
+
 .highlight{
     background-color:#faf9f9;
     margin:0
