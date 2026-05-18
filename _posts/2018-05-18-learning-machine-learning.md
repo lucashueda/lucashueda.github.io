@@ -2,8 +2,8 @@
 layout: post
 title: Versace Eyewear Soundtrack
 date: 2017-02-05 13:35:00 -0400
-image: versace-eyewear.jpg
-image_bg: versace-eyewear-bg.jpg
+image: aimtmp.svg
+image_bg: aimtmp.svg
 type: video
 tags: [music, cello]
 demo: https://www.youtube.com/watch?v=ZRonQmAInfo

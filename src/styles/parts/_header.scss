@@ -3,6 +3,12 @@
     padding: 15px 0;
     background-color: $white;
     box-shadow: 0px -5px 15px rgba(0, 0, 0, .3);
+  
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
 
     .header-flex {
       display: flex;
@@ -70,19 +76,30 @@
     }
   }
   
-  .left-header-container,
-  .right-header-container {
-    width: 25%;
-    a {
-      text-decoration: none;
-      color: $dark-purple;
-      transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
-      box-shadow: 0 0 0 0 transparent;
-      &:hover {
-        box-shadow: 0 2px 0 0 $dark-purple;
-      }
-    }
+  // .left-header-container,
+  // .right-header-container {
+  //   width: 25%;
+  //   a {
+  //     text-decoration: none;
+  //     color: $dark-purple;
+  //     transition: all 350ms cubic-bezier(0.13, 0.43, 0.54, 1.82);
+  //     box-shadow: 0 0 0 0 transparent;
+  //     &:hover {
+  //       box-shadow: 0 2px 0 0 $dark-purple;
+  //     }
+  //   }
   
+  // }
+
+  .left-header-container,
+  .right-header-container,
+  .center-header-container {
+      width: auto;      // Remove the fixed widths
+      flex: 1;          // Distribute remaining space evenly
+  }
+  
+  .center-header-container {
+      text-align: center;
   }
   
   .left-header-container {
@@ -107,6 +124,6 @@
   }
 
   /* Ensure that content doesn't overlap with the header */
-body {
-    padding-top: 130px; /* Adjust based on the height of your header */
-}
+// body {
+//     // padding-top: 130px; /* Adjust based on the height of your header */
+// }

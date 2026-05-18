@@ -2,6 +2,9 @@
 <html lang="en">
   {% include head.html %}
   <body class="d-none">
+      {% include header.html %}
+      <div class="header-spacer"></div>
+
       {{ content }}
       {% include footer.html %}
       <script src="{{ "/assets/js/posts.js" | prepend: site.baseurl }}"></script>
