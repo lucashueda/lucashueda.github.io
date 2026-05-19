@@ -256,9 +256,17 @@ pre code{border:0;padding-right:0;padding-left:0}
 .main-footer { padding: 15px 0; background-color: #efefef; }
 .main-footer .copyright { text-align: center; color: #311e3e; font-size: 16px; }
 
-.page-image { position: relative; padding: 0; margin: 0; height: 500px; background-color: #fff; overflow: hidden; }
+.page-image { 
+    position: relative; padding: 0; margin: 0; 
+    height: 280px; /* Reduced from 500px */
+    background-color: #fff; overflow: hidden; 
+}
 .page-image .cover-image { height: 100%; width: 100%; }
-.page-content { margin-top: -80px; margin-bottom: 60px; background-color: #fff; padding: 70px; box-shadow: 0 0 20px 0 rgba(0,0,0,.1); }
+.page-content { 
+    margin-top: -40px; /* Reduced from -80px to align beautifully */
+    margin-bottom: 60px; background-color: #fff; padding: 70px; 
+    box-shadow: 0 0 20px 0 rgba(0,0,0,.1); 
+}
 .header-page, .page-content .captioned-image, .page-content .highlighter-rouge, .page-content video { margin-bottom: 30px; }
 .header-page { position: relative; }
 .header-page h1 { font-size: 36px; margin: 0 0 20px; color: #311e3e; }
