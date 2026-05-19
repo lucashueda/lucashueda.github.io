@@ -6,7 +6,7 @@ image: aitmp.png
 image_bg: speech_bg.jpeg
 type: speech
 tags: [speech, dataset]
-demo: https://www.youtube.com/watch?v=ZRonQmAInfo
+demo: https://www.youtube.com/watch?v=W_EPr3_cpdc&list=RDW_EPr3_cpdc&start_radio=1
 ---
 
 Here is a comprehensive compilation of speech datasets available for Brazilian Portuguese (pt-BR) categorized by task and ordered chronologically.
