@@ -3,7 +3,7 @@ layout: post
 title: Brazilian Portuguese Speech Datasets
 date: 2026-05-17 12:00:00 -0300
 image: aitmp.png
-image_bg: aitmp.png
+image_bg: speech_bg.jpeg
 type: speech
 tags: [speech, dataset]
 demo: https://www.youtube.com/watch?v=ZRonQmAInfo
