@@ -9,6 +9,9 @@ tags: [speech, dataset]
 demo: https://www.youtube.com/watch?v=W_EPr3_cpdc&list=RDW_EPr3_cpdc&start_radio=1
 ---
 
+> **📅 Last Updated: September 16, 2026**  
+> *Added YODAS-Granary (13.4k hours) and the CoLingPB sociolinguistic corpus to the ASR resources.*
+
 Here is a comprehensive compilation of speech datasets available for Brazilian Portuguese (pt-BR) categorized by task and ordered chronologically.
 
 ---
@@ -16,17 +19,6 @@ Here is a comprehensive compilation of speech datasets available for Brazilian P
 ## Automatic Speech Recognition (ASR)
 
 ---
----
-
-### TTS Portuguese Corpus (2020)
-**Single speaker · ~10.5 h · Read speech · 48 kHz**
-
-Single-speaker corpus with ~10.5 hours of clean studio-quality speech (48 kHz), comprising 3,632 Wave files ranging from 0.7 to 50 seconds. Designed for TTS but widely used for ASR benchmarking.
-
-- **Authors:** Edresson Casanova, Arnaldo Candido Junior, Christopher Shulby, Frederico Santos de Oliveira, João Paulo Teixeira, Moacir Antonelli Ponti, Sandra Maria Aluisio
-- **Download:** [GitHub Repository](https://github.com/Edresson/TTS-Portuguese-Corpus)
-- **Paper:** [Springer](https://link.springer.com/article/10.1007/s10579-021-09570-4)
-
 ---
 
 ### Multilingual LibriSpeech (MLS) — pt-BR (2020)
@@ -76,28 +68,6 @@ Large publicly available pt-BR ASR dataset with 290.77 hours of audio and 400k+ 
 
 ---
 
-### Globo Speech Datasets (2023)
-**Single speaker each · ~20 h each · Studio quality**
-
-High-quality studio-grade speech corpora from Globo, each ~20 hours. Comparable to LJSpeech in quality. Two releases: a female speaker corpus and a general (male) speaker corpus.
-
-- **Authors:** No paper related
-- **Download (Female):** [Kaggle — g-neutral-speech-female](https://www.kaggle.com/datasets/mediatechlab/g-neutral-speech-female)
-- **Download (Male):** [Kaggle — gneutralspeech](https://www.kaggle.com/datasets/mediatechlab/gneutralspeech)
-
----
-
-### CML-TTS (2023)
-**Multi-speaker · Read audiobook · 7 languages · TTS-optimized**
-
-Derived from MLS and adapted for TTS training across 7 languages including pt-BR. Provides cleaner segmentation and metadata more suitable for speech synthesis than the original MLS splits.
-
-- **Authors:** Oliveira, Frederico S. and Casanova, Edresson and Junior, Arnaldo Candido and Soares, Anderson S. and Galvão Filho, Arlindo R.
-- **Download:** [GitHub Repository](https://github.com/freds0/CML-TTS-Dataset)
-- **Paper:** [ACM DL](https://dl.acm.org/doi/10.1007/978-3-031-40498-6_17)
-
----
-
 ### CORAA NURC-SP (2024)
 **Multi-speaker · ~240 h · 170k+ clips · Naturalistic · São Paulo dialect**
 
@@ -131,9 +101,66 @@ Massive podcast-derived corpus with 8,972+ hours of naturalistic conversational 
 
 ---
 
+### CoLingPB — Corpus Linguístico da Paraíba (2015)
+**Unknown size · Raw conversational audio · Multi-turn annotations · Paraíba dialect**
+
+A sociolinguistic documentary corpus aimed at preserving the dialectal varieties of the Brazilian state of Paraíba. Recorded between 2011 and 2014, the dataset provides raw audio interviews accompanied by text transcriptions and multi-turn conversational markers. Because the audio files and transcriptions are distributed separately across individual project publications rather than a centralized repository, consolidating the full corpus requires web scraping. The total duration and exact number of utterances are unspecified.
+
+- **Authors:** Cirineu Cecote Stein (coordinator), Anna Elizabeth de C. C. da Silveira, Elioenai Macena de Araújo, Felipe de Castro Cruz, Lucas Hudson Pequeno da Silva, Maria Cristina da Silva Lima, Solange Soares Costa
+- **Download:** Distributed across multiple publications (requires web scraping to consolidate)
+- **Source:** Funded by MEC/SESu (PROEXT) and executed at UFPB (2011–2015)
+
+---
+
+### YODAS-Granary (2025)
+**Multi-speaker · 13.4k h (pt) · Pseudo-labeled · ASR + AST**
+
+A curated subset of the larger nvidia/Granary dataset, derived from the espnet/yodas2 corpus. The Portuguese partition contains approximately 13.4k hours of speech. Although officially categorized under European Portuguese in the metadata, the vast majority of the audio features Brazilian Portuguese. It provides high-quality pseudo-labeled data for both Automatic Speech Recognition (ASR) and Automatic Speech Translation (AST). ASR transcriptions were generated using Systran/faster-whisper-large-v3 and refined for punctuation/capitalization with Qwen/Qwen2.5-7B-Instruct, while AST translations to English were generated using utter-project/EuroLLM-9B-Instruct.
+
+- **Authors:** Nithin Rao Koluguri, Monica Sekoyan, George Zelenfroynd, Sasha Meister, Shuoyang Ding, Sofia Kostandian, He Huang, Nikolay Karpov, Jagadeesh Balam, Vitaly Lavrukhin, Yifan Peng, Sara Papi, Marco Gaido, Alessio Brutti, Boris Ginsburg
+- **Download:** [Hugging Face](https://huggingface.co/datasets/espnet/yodas-granary)
+- **Paper:** [arXiv:2505.13404](https://arxiv.org/abs/2505.13404)
+
+---
+
 ## Text-to-Speech (TTS)
 
 ---
+---
+
+### TTS Portuguese Corpus (2020)
+**Single speaker · ~10.5 h · Read speech · 48 kHz**
+
+Single-speaker corpus with ~10.5 hours of clean studio-quality speech (48 kHz), comprising 3,632 Wave files ranging from 0.7 to 50 seconds. Designed for TTS but widely used for ASR benchmarking.
+
+- **Authors:** Edresson Casanova, Arnaldo Candido Junior, Christopher Shulby, Frederico Santos de Oliveira, João Paulo Teixeira, Moacir Antonelli Ponti, Sandra Maria Aluisio
+- **Download:** [GitHub Repository](https://github.com/Edresson/TTS-Portuguese-Corpus)
+- **Paper:** [Springer](https://link.springer.com/article/10.1007/s10579-021-09570-4)
+
+---
+
+### Globo Speech Datasets (2023)
+**Single speaker each · ~20 h each · Studio quality**
+
+High-quality studio-grade speech corpora from Globo, each ~20 hours. Comparable to LJSpeech in quality. Two releases: a female speaker corpus and a general (male) speaker corpus.
+
+- **Authors:** Pedro H. L. Leite, Edmundo Hoyle, Álvaro Antelo, Luiz F. Kruszielski, Luiz W. P. Biscainho 
+- **Download (Female):** [Kaggle — g-neutral-speech-female](https://www.kaggle.com/datasets/mediatechlab/g-neutral-speech-female)
+- **Paper:** [SBrT 2023](https://biblioteca.sbrt.org.br/articles/4464)
+- **Download (Male):** [Kaggle — gneutralspeech](https://www.kaggle.com/datasets/mediatechlab/gneutralspeech)
+- **Paper:** [PROPOR 2022](https://link.springer.com/chapter/10.1007/978-3-030-98305-5_32)
+
+---
+
+### CML-TTS (2023)
+**Multi-speaker · Read audiobook · 7 languages · TTS-optimized**
+
+Derived from MLS and adapted for TTS training across 7 languages including pt-BR. Provides cleaner segmentation and metadata more suitable for speech synthesis than the original MLS splits.
+
+- **Authors:** Oliveira, Frederico S. and Casanova, Edresson and Junior, Arnaldo Candido and Soares, Anderson S. and Galvão Filho, Arlindo R.
+- **Download:** [GitHub Repository](https://github.com/freds0/CML-TTS-Dataset)
+- **Paper:** [ACM DL](https://dl.acm.org/doi/10.1007/978-3-031-40498-6_17)
+
 ---
 
 ### CommonVoice Consolidated (pt-BR) (2025)
@@ -231,11 +258,12 @@ Audio-visual acted emotion dataset with 1,008 recordings (84 videos per actor) f
 ---
 
 ### BRSpeech-DF-Dataset
-> ⚠️ Not yet publicly available
+**Real & synthetic speech · 459K samples · Brazilian & European Portuguese · Deepfake detection & speaker verification**
 
-Deepfake detection and speaker verification dataset for Brazilian Portuguese.
+459,000 audio samples of real and synthetic speech in Portuguese, covering both Brazilian and European variants. Synthetic samples are generated using multiple zero-shot TTS models, making the dataset suitable for deepfake speech detection and speaker verification research.
 
 - **GitHub:** [AKCIT-Speech/BRSpeech-DF-Dataset](https://github.com/AKCIT-Speech/BRSpeech-DF-Dataset)
+- **Download:** [Hugging Face](https://huggingface.co/datasets/AKCIT-Deepfake/BRSpeech-DF)
 
 ---
 
