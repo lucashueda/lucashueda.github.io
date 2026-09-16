@@ -128,6 +128,17 @@ A curated subset of the larger nvidia/Granary dataset, derived from the espnet/y
 ---
 ---
 
+### Accent Dataset SP-RJ
+**Dual-accent · Accent conversion · São Paulo & Rio de Janeiro dialects**
+
+A specialized dataset designed specifically for accent conversion tasks, featuring speech data from two prominent Brazilian regional dialects: São Paulo and Rio de Janeiro. 
+
+- **Authors:** Fernanda Lustosa
+- **Download:** [Kaggle](https://www.kaggle.com/datasets/fernandalustosa/accent-dataset-sp-rj)
+- **Paper:** No paper related
+
+---
+
 ### TTS Portuguese Corpus (2020)
 **Single speaker · ~10.5 h · Read speech · 48 kHz**
 
