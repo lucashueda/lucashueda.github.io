@@ -12,7 +12,7 @@ publications_title: Publications
 
 # User settings
 user_description_appendix: |
-  I created this website to store my thoughts and share my personal projects, mostly, on AI. My research topics are:
+  I've created this website to store my thoughts and share my personal projects, mostly, on AI. My research topics are:
   artificial intelligence, gen ai, speech synthesis, voice conversion, representation learning and affective computing.
 
   This website was built on top of [Rassaby][rassaby] template all credits to him.
@@ -34,7 +34,7 @@ author: Lucas H. Ueda
 author_title: AI Researcher
 author_photo: profile.jpeg
 user_description_short: |
-  I'm a PhD student and a Speech Researcher with focus on speech synthesis.
+  I'm a PosDoc Researcher with focus on speech synthesis and recognition.
 
 
 ## Disqus
