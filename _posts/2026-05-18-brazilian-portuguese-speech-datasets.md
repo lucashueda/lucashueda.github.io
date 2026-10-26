@@ -9,7 +9,10 @@ tags: [speech, dataset]
 demo: https://www.youtube.com/watch?v=W_EPr3_cpdc&list=RDW_EPr3_cpdc&start_radio=1
 ---
 
-> **📅 Last Updated: September 16, 2026**  
+> **📅 Modified at: October 26, 2026**  
+> *Added WorldSpeech (1,763.5h pt-BR) to ASR and Corpus CEFALA-1 (104 speakers) to ASV resources. Adjusted chronological ordering for consistency.*
+>
+> **📅 Modified at: September 16, 2026**  
 > *Added YODAS-Granary (13.4k hours) and the CoLingPB sociolinguistic corpus to the ASR resources.*
 
 Here is a comprehensive compilation of speech datasets available for Brazilian Portuguese (pt-BR) categorized by task and ordered chronologically.
@@ -19,6 +22,17 @@ Here is a comprehensive compilation of speech datasets available for Brazilian P
 ## Automatic Speech Recognition (ASR)
 
 ---
+---
+
+### CoLingPB — Corpus Linguístico da Paraíba (2015)
+**Unknown size · Raw conversational audio · Multi-turn annotations · Paraíba dialect**
+
+A sociolinguistic documentary corpus aimed at preserving the dialectal varieties of the Brazilian state of Paraíba. Recorded between 2011 and 2014, the dataset provides raw audio interviews accompanied by text transcriptions and multi-turn conversational markers. Because the audio files and transcriptions are distributed separately across individual project publications rather than a centralized repository, consolidating the full corpus requires web scraping. The total duration and exact number of utterances are unspecified.
+
+- **Authors:** Cirineu Cecote Stein (coordinator), Anna Elizabeth de C. C. da Silveira, Elioenai Macena de Araújo, Felipe de Castro Cruz, Lucas Hudson Pequeno da Silva, Maria Cristina da Silva Lima, Solange Soares Costa
+- **Download:** Distributed across multiple publications (requires web scraping to consolidate)
+- **Source:** Funded by MEC/SESu (PROEXT) and executed at UFPB (2011–2015)
+
 ---
 
 ### Multilingual LibriSpeech (MLS) — pt-BR (2020)
@@ -90,6 +104,17 @@ Life story interview corpus with 289 interviews totalling 365 hours. Highly dive
 
 ---
 
+### YODAS-Granary (2025)
+**Multi-speaker · 13.4k h (pt) · Pseudo-labeled · ASR + AST**
+
+A curated subset of the larger nvidia/Granary dataset, derived from the espnet/yodas2 corpus. The Portuguese partition contains approximately 13.4k hours of speech. Although officially categorized under European Portuguese in the metadata, the vast majority of the audio features Brazilian Portuguese. It provides high-quality pseudo-labeled data for both Automatic Speech Recognition (ASR) and Automatic Speech Translation (AST). ASR transcriptions were generated using Systran/faster-whisper-large-v3 and refined for punctuation/capitalization with Qwen/Qwen2.5-7B-Instruct, while AST translations to English were generated using utter-project/EuroLLM-9B-Instruct.
+
+- **Authors:** Nithin Rao Koluguri, Monica Sekoyan, George Zelenfroynd, Sasha Meister, Shuoyang Ding, Sofia Kostandian, He Huang, Nikolay Karpov, Jagadeesh Balam, Vitaly Lavrukhin, Yifan Peng, Sara Papi, Marco Gaido, Alessio Brutti, Boris Ginsburg
+- **Download:** [Hugging Face](https://huggingface.co/datasets/espnet/yodas-granary)
+- **Paper:** [arXiv:2505.13404](https://arxiv.org/abs/2505.13404)
+
+---
+
 ### TAGARELA (2026)
 **Multi-speaker · 8,972+ h total · ~2k h TTS subset · Podcast / spontaneous · ASR + TTS**
 
@@ -101,25 +126,14 @@ Massive podcast-derived corpus with 8,972+ hours of naturalistic conversational 
 
 ---
 
-### CoLingPB — Corpus Linguístico da Paraíba (2015)
-**Unknown size · Raw conversational audio · Multi-turn annotations · Paraíba dialect**
+### WorldSpeech (2026)
+**Multilingual · >65k h total · 1,763.5 h pt-BR · 24 kHz**
 
-A sociolinguistic documentary corpus aimed at preserving the dialectal varieties of the Brazilian state of Paraíba. Recorded between 2011 and 2014, the dataset provides raw audio interviews accompanied by text transcriptions and multi-turn conversational markers. Because the audio files and transcriptions are distributed separately across individual project publications rather than a centralized repository, consolidating the full corpus requires web scraping. The total duration and exact number of utterances are unspecified.
+A multilingual ASR dataset containing over 65k hours of human transcribed speech across 127 language-region variants, drawn from national parliaments, public broadcasters, public-domain audiobooks, and international institutions. Rows consist of 24 kHz speech utterances paired with a human-provided transcript, an aligned ASR transcript, character error rate (CER) between the two, a WADA-SNR estimate, and four DNSMOS-P.835 quality scores. Mostly for ASR tasks, it provides 1,763.5 hours of pt-BR speech, sourced primarily from the Brazilian Federal Senate and the Chamber of Deputies (Câmara).
 
-- **Authors:** Cirineu Cecote Stein (coordinator), Anna Elizabeth de C. C. da Silveira, Elioenai Macena de Araújo, Felipe de Castro Cruz, Lucas Hudson Pequeno da Silva, Maria Cristina da Silva Lima, Solange Soares Costa
-- **Download:** Distributed across multiple publications (requires web scraping to consolidate)
-- **Source:** Funded by MEC/SESu (PROEXT) and executed at UFPB (2011–2015)
-
----
-
-### YODAS-Granary (2025)
-**Multi-speaker · 13.4k h (pt) · Pseudo-labeled · ASR + AST**
-
-A curated subset of the larger nvidia/Granary dataset, derived from the espnet/yodas2 corpus. The Portuguese partition contains approximately 13.4k hours of speech. Although officially categorized under European Portuguese in the metadata, the vast majority of the audio features Brazilian Portuguese. It provides high-quality pseudo-labeled data for both Automatic Speech Recognition (ASR) and Automatic Speech Translation (AST). ASR transcriptions were generated using Systran/faster-whisper-large-v3 and refined for punctuation/capitalization with Qwen/Qwen2.5-7B-Instruct, while AST translations to English were generated using utter-project/EuroLLM-9B-Instruct.
-
-- **Authors:** Nithin Rao Koluguri, Monica Sekoyan, George Zelenfroynd, Sasha Meister, Shuoyang Ding, Sofia Kostandian, He Huang, Nikolay Karpov, Jagadeesh Balam, Vitaly Lavrukhin, Yifan Peng, Sara Papi, Marco Gaido, Alessio Brutti, Boris Ginsburg
-- **Download:** [Hugging Face](https://huggingface.co/datasets/espnet/yodas-granary)
-- **Paper:** [arXiv:2505.13404](https://arxiv.org/abs/2505.13404)
+- **Authors:** Antonis Asonitis, Luca A. Lanzendörfer, Frédéric Berdoz, Roger Wattenhofer
+- **Download:** [Hugging Face](https://huggingface.co/datasets/disco-eth/WorldSpeech)
+- **Paper:** [arXiv](https://arxiv.org/abs/2605.09167)
 
 ---
 
@@ -266,6 +280,17 @@ Audio-visual acted emotion dataset with 1,008 recordings (84 videos per actor) f
 ## Automatic Speaker Verification (ASV)
 
 ---
+---
+
+### Corpus CEFALA-1 (2019)
+**104 speakers · Audiovisual · Studio quality · 5 microphones**
+
+An audiovisual database of speakers designed for biometric, phonetic, and phonology studies. It contains recordings from 104 speakers (49 female and 55 male), and features a protocol guiding participants through a short monologue, paragraph reading, and sentence reading. Recorded in a professional studio using five different microphones—including a smartphone, a video camera, a wireless microphone, a lapel microphone, and a condenser microphone—the dataset is well-suited for speaker verification and biometric research tasks.
+
+- **Authors:** Arlindo Follador Neto, Adelino Pinheiro Silva, Hani Camille Yehia
+- **Download:** [CEFALA](http://www.cefala.org)
+- **Paper:** [Rev. Estud. Ling.](https://periodicos.ufmg.br/index.php/relin/article/view/27703)
+
 ---
 
 ### BRSpeech-DF-Dataset
